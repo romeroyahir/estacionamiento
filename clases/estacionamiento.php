@@ -98,7 +98,7 @@ class estacionamiento
 
 	public static function CrearTablaEstacionados()
 	{
-		$lista =estacionamiento::Leer();
+		$lista =estacionamiento::TraerTodo();
 		$archivo=fopen("archivos/tablaestacionados.php","w");
 
 

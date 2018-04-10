@@ -1,5 +1,7 @@
 <?php
 require"clases/estacionamiento.php";
+require"clases/vehiculo.php";
+
 
 $patente=$_POST['patente'];
 $accion=$_POST['estacionar'];
@@ -7,7 +9,7 @@ $accion=$_POST['estacionar'];
 if($accion=="ingreso")
 {
 
-	estacionamiento::Guardar( $patente);
+	estacionamiento::estacionar($patente, $horaingreso);
 }
 else
 {
